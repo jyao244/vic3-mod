@@ -1,0 +1,19 @@
+﻿POPS = {
+	s:STATE_RYUKYU_ISLANDS = {
+		region_state:RYU = {
+			create_pop = {
+				culture = ryukyuan
+				size = 224134
+			}
+			create_pop = {
+				culture = ryukyuan
+                religion = confucian
+				size = 19801
+			}
+			create_pop = {
+				culture = han
+				size = 15246
+			}
+		}	
+	}
+}

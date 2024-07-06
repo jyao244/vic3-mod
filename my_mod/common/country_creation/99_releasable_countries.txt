@@ -1,0 +1,7 @@
+﻿LAD = {
+	states = { 
+		STATE_KASHMIR
+	}
+
+	ai_will_do = { always = no }
+}

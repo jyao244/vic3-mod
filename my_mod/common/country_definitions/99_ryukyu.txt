@@ -1,0 +1,11 @@
+﻿RYU = { # Ryukyu
+	color = { 201 197 124 }
+	country_type = unrecognized
+	
+	tier = kingdom
+    
+    religion = confucian
+	
+	cultures = { ryukyuan }
+	capital = STATE_RYUKYU_ISLANDS
+}

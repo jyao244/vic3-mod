@@ -1,0 +1,28 @@
+﻿easy_difficulty = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	country_tax_income_add = 100
+}
+
+very_easy_difficulty = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	country_tax_income_add = 1000
+	country_bureaucracy_mult = 1
+	country_authority_mult = 1
+	country_influence_mult = 1
+	country_infamy_decay_mult = 10
+	country_improve_relations_speed_mult = 10
+	#building_throughput_mult = 1
+}
+
+very_easy_difficulty_ai = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 100
+	country_tech_spread_mult = -1000
+	country_weekly_innovation_mult = -1000
+	#technology_invention_cost_mult = 1000
+	country_company_construction_efficiency_bonus_add = -1
+	country_construction_add = -1
+	country_max_weekly_construction_progress_add = -1
+	country_private_construction_allocation_mult = -1
+	#building_throughput_mult = -1
+}

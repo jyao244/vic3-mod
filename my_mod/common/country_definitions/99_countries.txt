@@ -1,0 +1,23 @@
+﻿JAP = {
+	color = { 194 53 60 }
+	country_type = unrecognized
+	
+	tier = empire
+    
+    religion = shinto
+	
+	cultures = { japanese }
+	capital = STATE_KANSAI
+}
+
+KRN = { # Karen
+	color = { 72 153 99 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { karen }
+	
+	capital = STATE_TENASSERIM
+}

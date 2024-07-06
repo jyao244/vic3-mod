@@ -1,0 +1,17 @@
+﻿bg_gold_fields = {
+	parent_group = bg_mining
+
+	auto_place_buildings = yes
+
+	discoverable_resource = yes
+	
+	depletable_resource = no
+	
+	pays_taxes = no
+
+	infrastructure_usage_per_level = 0
+
+	default_building = building_gold_fields
+	
+	fired_pops_become_radical = no
+}

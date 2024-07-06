@@ -1,0 +1,19 @@
+﻿pm_no_telephones = {
+    texture = "gfx/interface/icons/production_method_icons/no_radios.dds"
+    unlocking_technologies = {
+        radio
+    }        
+    building_modifiers = {
+        workforce_scaled = {
+            goods_input_electricity_add = 150
+            goods_output_telephones_add = -60
+            goods_output_radios_add = 120
+        }
+        
+        level_scaled = {
+            building_employment_engineers_add = 1500
+        }
+    }
+
+	required_input_goods = electricity
+}
