@@ -1,5 +1,5 @@
 ﻿RYU = { # Ryukyu
-	color = { 201 197 124 }
+	color = { 84 96 136 }
 	country_type = unrecognized
 	
 	tier = kingdom

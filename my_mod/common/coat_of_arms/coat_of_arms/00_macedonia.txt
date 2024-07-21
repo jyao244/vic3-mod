@@ -1,0 +1,10 @@
+﻿MCD = {
+    pattern = "pattern_solid.tga"
+    color1 = "red"
+
+    colored_emblem = {
+        texture = "ce_macedonia.dds"
+        color1 = "yellow"
+        instance = { position = { 0.5 0.5 } scale = { 1.00 1.00 } }
+    }
+}

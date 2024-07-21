@@ -1,0 +1,80 @@
+﻿grant_leadership_to_command = {
+	icon = "gfx/interface/character_panel/grant_command_not.dds"
+	clicksound = "event:/SFX/DLC/1.3_ip1/UI/agitator_promote"
+
+	potential = {
+        OR = {
+		    has_role = general
+            has_role = admiral
+        }
+		owner = scope:actor
+	}
+
+	possible = {
+		interest_group = {
+			is_in_government = yes
+		}
+		trigger_if = {
+			NOT = { culture = { culture_is_discriminated_in = root.owner } }
+		}
+		trigger_else = {
+			character_is_discriminated = no
+		}		
+		OR = {
+			is_female = no
+			scope:actor ?= { has_law = law_type:law_womens_suffrage }
+		}
+	}
+
+	effect = {
+		add_character_role = politician
+		custom_tooltip = {
+			text = make_agitator_ig_leader_tt
+			set_as_interest_group_leader = yes
+		}
+	}
+
+	cooldown = { months = normal_modifier_time }
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+grant_ig_leader_to_ruler = {
+    icon = "gfx/interface/character_panel/grant_command_not.dds"
+	clicksound = "event:/SFX/DLC/1.3_ip1/UI/agitator_promote"
+
+	potential = {
+		is_ruler = no
+		has_role = politician
+		owner = scope:actor
+	}
+
+	possible = {
+		interest_group = {
+			is_in_government = yes
+		}
+		trigger_if = {
+			limit = { owner = { has_law = law_type:law_presidential_republic } }
+			NOT = { culture = { culture_is_discriminated_in = root.owner } }
+		}
+		trigger_else = {
+			character_is_discriminated = no
+		}		
+		OR = {
+			is_female = no
+			scope:actor ?= { has_law = law_type:law_womens_suffrage }
+		}
+	}
+
+	effect = {
+		set_character_as_ruler = yes
+	}
+
+	cooldown = { months = normal_modifier_time }
+
+	ai_chance = {
+		value = 0
+	}
+}

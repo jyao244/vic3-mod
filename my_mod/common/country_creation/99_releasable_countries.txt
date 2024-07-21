@@ -1,7 +1,50 @@
 ﻿LAD = {
-	states = { 
+	states = {
 		STATE_KASHMIR
 	}
-
+	#provinces = {
+        #x56684E x21F020 x18CED8 xB637A4 x6AA44A x2DDfDB xEDCC3E x72F7C2 xC49B8C x2B6E7C x9666D9 xAA60FC x2D5D46 x5990A7 xA09736 xCCD333
+    #}
 	ai_will_do = { always = no }
+}
+
+SKH = {
+	states = {
+		STATE_SAKHALIN
+	}
+	ai_will_do = { always = no }
+}
+
+SLW = {
+    states = {
+        STATE_CELEBES
+    }
+	ai_will_do = { always = no }
+}
+
+IDN = {
+    states = {
+		STATE_ACEH
+		STATE_CENTRAL_JAVA
+		STATE_EAST_BORNEO
+		STATE_EAST_JAVA
+		STATE_MALAYA
+		STATE_MOLUCCAS
+		STATE_CELEBES
+		STATE_NORTH_BORNEO
+		STATE_NORTH_SUMATRA
+		STATE_SOUTH_SUMATRA
+		STATE_SUNDA_ISLANDS
+		STATE_WEST_BORNEO
+		STATE_WESTERN_NEW_GUINEA
+		STATE_WEST_JAVA
+	}
+
+    required_num_states = 9
+
+    ai_will_do = { always = no }
+
+    possible = {
+		has_technology_researched = pan-nationalism
+	}
 }

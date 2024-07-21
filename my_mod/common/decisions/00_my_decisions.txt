@@ -1,0 +1,88 @@
+﻿slave_discriminated_pop_decision = {
+	is_shown = {
+	  	is_ai = no
+	}
+    possible = {
+        is_ai = no
+        has_law = law_type:law_slave_trade
+    }
+
+    when_taken = {
+        custom_tooltip = {
+			text = slave_discriminated_pop_tt
+			slave_discriminated_pop = yes
+		}
+    }
+
+    ai_chance = {
+        base = 0
+    }
+}
+
+# kill_discriminated_pop_decision = {
+# 	is_shown = {
+# 	  	is_ai = no
+# 	}
+#     possible = {
+#         is_ai = no
+#         has_government_type = gov_fascist_state
+#     }
+
+#     when_taken = {
+#         custom_tooltip = {
+# 			text = kill_discriminated_pop_tt
+# 			kill_discriminated_pop = yes
+# 		}
+#     }
+
+#     ai_chance = {
+#         base = 0
+#     }
+# }
+
+# kill_upper_strata_pop_decision = {
+# 	is_shown = {
+# 	  	is_ai = no
+# 	}
+#     possible = {
+#         is_ai = no
+#         OR = {
+#             has_government_type = gov_soviet_dictatorship
+#             has_government_type = gov_soviet_single_party_state
+#             has_government_type = gov_soviet_republic
+#         }
+#     }
+
+#     when_taken = {
+#         custom_tooltip = {
+# 			text = kill_upper_strata_pop_tt
+# 			kill_upper_strata_pop = yes
+# 		}
+#     }
+
+#     ai_chance = {
+#         base = 0
+#     }
+# }
+
+colonize_all_decision = {
+	is_shown = {
+	  	is_ai = no
+	}
+    possible = {
+        is_ai = no
+        has_technology_researched = quinine
+        NOT = { has_law = law_type:law_no_colonial_affairs }
+    }
+
+    when_taken = {
+        custom_tooltip = {
+			text = colonize_all_tt
+			colonize_all = yes
+		}
+    }
+
+    ai_chance = {
+        base = 0
+    }
+}

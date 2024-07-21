@@ -7,6 +7,8 @@
 	
 	depletable_resource = no
 	
+	always_self_owning = yes
+	
 	pays_taxes = no
 
 	infrastructure_usage_per_level = 0
