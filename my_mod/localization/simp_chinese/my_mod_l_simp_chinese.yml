@@ -1,2 +1,25 @@
 ﻿l_simp_chinese:
+ ALK:0 "阿拉斯加"
+ ALK_ADJ:0 "阿拉斯加"
+
+ MCD:0 "马其顿"
+ MCD_ADJ:0 "马其顿"
+
+ SHS:0 "掸"
+ SHS_ADJ:0 "掸"
+
  pm_no_telephones:0 "优先无线电生产"
+
+ slave_discriminated_pop_decision:0 "奴役黑叔叔"
+ slave_discriminated_pop_decision_desc:0 "把所有黑人变成奴隶，让他们去种植园种棉花"
+ slave_discriminated_pop_tt:0 "所有具有$african_heritage$[Concept('concept_cultural_trait', '$concept_cultural_traits$')]的[Concept('concept_pop', '$concept_pop$')]将被[Concept('concept_slavery', '$concept_enslaved$')]。"
+
+ colonize_all_decision:0 "快速殖民"
+ colonize_all_decision_desc:0 "殖民所有潜在的殖民地"
+ colonize_all_tt:0 "建立所有潜在的殖民地"
+
+ grant_leadership_to_command:0 "授予领导权"
+ grant_ig_leader_to_ruler:0 "授予统治者"
+
+ da_accept_cultures:0 "接受文化"
+ da_accept_cultures_desc:0 "更改一个[concept_subject]的[concept_primary_cultures]。"

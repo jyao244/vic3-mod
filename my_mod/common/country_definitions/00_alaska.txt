@@ -1,0 +1,11 @@
+﻿ALK = { # Alaska
+	color = { 123 150 255 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { athabaskan inuit }
+	
+	capital = STATE_ALASKA
+}

@@ -1,0 +1,11 @@
+﻿SHS = { # Shan
+	color = { 121 229 215 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { shan }
+	
+	capital = STATE_SHAN_STATES
+}

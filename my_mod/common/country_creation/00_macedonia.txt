@@ -1,0 +1,7 @@
+﻿MCD = {
+    states = {
+		STATE_MACEDONIA
+        STATE_SKOPIA
+	}
+	ai_will_do = { always = no }
+}

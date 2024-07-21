@@ -1,0 +1,6 @@
+﻿SHS = {
+	states = {
+		STATE_SHAN_STATES
+	}
+	ai_will_do = { always = no }
+}
