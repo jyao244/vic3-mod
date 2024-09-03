@@ -1,4 +1,11 @@
 ﻿l_simp_chinese:
+ rule_difficulty:0 "难度"
+ setting_normal_difficulty:0 "普通"
+ setting_easy_difficulty:0 "简单"
+ setting_very_easy_difficulty:0 "非常简单"
+
+ pm_no_telephones:0 "优先无线电生产"
+
  ALK:0 "阿拉斯加"
  ALK_ADJ:0 "阿拉斯加"
 
@@ -8,7 +15,11 @@
  SHS:0 "掸"
  SHS_ADJ:0 "掸"
 
- pm_no_telephones:0 "优先无线电生产"
+ SVJ:0 "三佛齐"
+ SVJ_ADJ:0 "三佛齐"
+
+ MJP:0 "满者伯夷"
+ MJP_ADJ:0 "满者伯夷"
 
  slave_discriminated_pop_decision:0 "奴役黑叔叔"
  slave_discriminated_pop_decision_desc:0 "把所有黑人变成奴隶，让他们去种植园种棉花"

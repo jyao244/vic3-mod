@@ -3,6 +3,6 @@
 	production_methods = {
 		pm_no_radios
 		pm_radios
-        pm_no_telephones
+		pm_no_telephones
 	}
 }

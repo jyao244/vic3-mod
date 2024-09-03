@@ -1,0 +1,12 @@
+﻿# Srivijaya
+SVJ = {
+	color = { 0  128  128 }
+	
+	country_type = unrecognized
+
+	tier = empire
+	
+	cultures = { malay sumatran }
+	religion = mahayana
+	capital = STATE_SOUTH_SUMATRA
+}

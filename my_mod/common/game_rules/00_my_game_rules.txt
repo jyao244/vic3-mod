@@ -1,0 +1,16 @@
+﻿difficulty = {
+	default = normal_difficulty
+
+	normal_difficulty = {
+	}
+
+	easy_difficulty = {
+		apply_modifier = player:easy_difficulty
+		apply_modifier = ai:easy_difficulty_ai
+	}
+
+	very_easy_difficulty = {
+		apply_modifier = player:very_easy_difficulty
+		apply_modifier = ai:very_easy_difficulty_ai
+	}
+}

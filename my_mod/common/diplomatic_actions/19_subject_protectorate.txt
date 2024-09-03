@@ -1,0 +1,85 @@
+﻿protectorate = {
+	requires_approval = yes
+	should_notify_third_parties = yes
+	can_use_obligations = yes
+
+	possible = {
+		scope:target_country = { is_at_war = no }
+		has_diplomatic_relevance = scope:target_country
+		is_revolutionary = no
+		scope:target_country = {
+			is_revolutionary = no
+			is_subject = no
+			country_rank < rank_value:unrecognized_major_power
+			is_diplomatic_play_committed_participant = no
+		}
+		prestige >= {
+			value = scope:target_country.prestige
+			multiply = 5
+		}
+		custom_tooltip = {
+			text = DIPLO_ACTION_MARKET_CONNECTION_REQUIRED
+			OR = {	
+				AND = {
+					market = { has_port = yes }
+					scope:target_country.market = { has_port = yes }
+				}
+				scope:actor.market = {
+					any_scope_country = {
+						is_adjacent_to_country = root
+					}
+				}
+			}
+		}		
+	}
+
+	groups= {
+		general
+	}
+	show_in_lens = yes
+
+	potential = {  # Only created through diplomatic demands
+		is_ai = no
+	}
+	
+	pact = {	
+		cost = 25
+		has_junior_participant = yes
+		recipient_pays_maintenance = no	
+		
+		relations_progress_per_day = 1
+		relations_improvement_max = 50
+		
+		subject_type = subject_type_protectorate	
+		
+		second_modifier = {
+			country_convoy_contribution_to_market_owner_add = 0.25
+		}
+		
+		actor_can_break = {
+			is_diplomatic_play_committed_participant = no
+		}
+
+		target_can_break = { # Has to use diplomatic play to break
+			always = no
+		}
+
+		manual_break_effect = {
+			create_bidirectional_truce = { country = scope:target_country months = 60 }
+		}
+		
+		auto_break_effect = {
+			create_bidirectional_truce = { country = scope:target_country months = 60 }
+		}
+	}
+	
+	ai = {
+		evaluation_chance = {
+			value = 0
+		}	
+	
+		will_break = {
+			always = no			
+		}		
+	}	
+}

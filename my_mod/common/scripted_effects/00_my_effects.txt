@@ -1,55 +1,64 @@
 ﻿slave_discriminated_pop = {
 	every_scope_pop = {
 		limit = {
-			pop_is_discriminated = yes
-            culture = {
-                has_discrimination_trait = african_heritage
-            }
+			#pop_is_discriminated = yes
+			culture = {
+				has_discrimination_trait = african_heritage
+			}
 		}
 		change_poptype = pop_type:slaves
 	}
 }
 
+colonize_all = {
+	every_country = {
+		limit = {
+			is_country_type = decentralized
+			OR = {
+				has_strategic_adjacency = root
+				any_scope_state = {
+					is_coastal = yes
+				}
+			}
+		}
+		save_temporary_scope_as = to_be_annexed
+		root = {
+			if = {
+				limit = { exists = scope:to_be_annexed }
+				annex = scope:to_be_annexed
+			}
+		}
+	}
+}
+
+# instant_education = {
+# 	every_scope_pop = {
+# 		limit = {
+# 			pop_is_discriminated = no
+# 		}
+# 		set_pop_literacy = 0.2
+# 	}
+# }
+
 # kill_discriminated_pop = {
-#     kill_population_percent = {
-#         percent = 1
-#         culture = cu:ashkenazi
-#     }
-#     kill_population_percent = {
-#         percent = 1
-#         culture = cu:sephardic
-#     }
+# 	kill_population_percent = {
+# 		percent = 1
+# 		culture = cu:ashkenazi
+# 	}
+# 	kill_population_percent = {
+# 		percent = 1
+# 		culture = cu:sephardic
+# 	}
 # }
 
 # kill_upper_strata_pop = {
-#     kill_population_percent = {
-#         percent = 1
-#         strata = rich
-#     }
-#     every_scope_building = {
+# 	kill_population_percent = {
+# 		percent = 1
+# 		strata = rich
+# 	}
+# 	every_scope_building = {
 # 		limit = {
 # 			occupancy < 1
 # 		}
 # 	}
 # }
-
-colonize_all = {
-    every_country = {
-        limit = {
-            is_country_type = decentralized
-            OR = {
-                has_strategic_adjacency = root
-                any_scope_state = {
-                    is_coastal = yes
-                }
-            }
-        }
-        save_temporary_scope_as = to_be_annexed
-        root = {
-            if = {
-                limit = { exists = scope:to_be_annexed }
-                annex = scope:to_be_annexed
-            }
-        }
-    }
-}
