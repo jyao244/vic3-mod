@@ -4,13 +4,14 @@
 			ruler = yes
 			first_name = RYU_Iku
 			last_name = RYU_Sho
+			historical = yes
 			birth_date = 1813.8.19
+			culture = cu:ryukyuan
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				#historical_figures
 				arrogant
-				expensive_tastes # bit of corruption
+				expensive_tastes
 			}
 		}
 
@@ -18,11 +19,12 @@
 			heir = yes
 			first_name = RYU_Tai
 			last_name = RYU_Sho
+			historical = yes
 			birth_date = 1843.8.3
+			culture = cu:ryukyuan
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				#historical_figures
 				meticulous
 				pious
 			}

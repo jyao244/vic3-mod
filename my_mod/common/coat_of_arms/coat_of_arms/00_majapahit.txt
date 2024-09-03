@@ -1,0 +1,10 @@
+﻿MJP = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_stripes_9.dds"
+		color1 = "red"
+		color2 = "red"
+	}
+}

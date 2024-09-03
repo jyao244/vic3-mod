@@ -1,6 +1,10 @@
 ﻿pm_synth_oil_production = {
 	texture = "gfx/interface/icons/production_method_icons/simple_oil_extraction.dds"
 	
+	unlocking_technologies = {
+		aniline
+	}
+
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 10
@@ -9,21 +13,19 @@
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_coal_add = 60
-			goods_input_tools_add = 10
-			goods_input_electricity_add = 20
+			goods_input_coal_add = 60 # x30 = 1800
+			goods_input_engines_add = 10 # x60 = 600
 
-			goods_output_oil_add = 60
+			goods_output_oil_add = 60 # x40 = 2400
 		}
 
 		level_scaled = {
+			building_employment_shopkeepers_add = 500
 			building_employment_laborers_add = 1000
-			building_employment_machinists_add = 1000
-			building_employment_engineers_add = 1000
+			building_employment_machinists_add = 1500
+			building_employment_engineers_add = 2000
 		}
 	}
-
-	required_input_goods = electricity
 }
 
 pm_improved_synth_oil_production = {
@@ -35,23 +37,23 @@ pm_improved_synth_oil_production = {
 
 	state_modifiers = {
 		workforce_scaled = {
-			state_pollution_generation_add = 10
+			state_pollution_generation_add = 15
 		}
 	}
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_coal_add = 60
-			goods_input_tools_add = 10
-			goods_input_electricity_add = 30
+			goods_input_coal_add = 60 # x30 = 1800
+			goods_input_engines_add = 10 # x60 = 600
+			goods_input_electricity_add = 20 # x30 = 600
 
-			goods_output_oil_add = 100
+			goods_output_oil_add = 100 # x40 = 4000
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 500
-			building_employment_machinists_add = 1250
-			building_employment_engineers_add = 1250
+			building_employment_shopkeepers_add = 500
+			building_employment_machinists_add = 2000
+			building_employment_engineers_add = 2500
 		}
 	}
 
@@ -67,25 +69,23 @@ pm_synth_rubber_production = {
 
 	state_modifiers = {
 		workforce_scaled = {
-			state_pollution_generation_add = 10
+			state_pollution_generation_add = 15
 		}
 	}
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_oil_add = 30
-			goods_input_tools_add = 10
-			goods_input_electricity_add = 10
+			goods_input_oil_add = 30 # x40 = 1200
+			goods_input_engines_add = 10 # x60 = 600
 
-			goods_output_rubber_add = 100
+			goods_output_rubber_add = 100 # x40 = 4000
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 1000
-			building_employment_machinists_add = 1500
-			building_employment_engineers_add = 500
+			building_employment_shopkeepers_add = 500
+			building_employment_laborers_add = 2500
+			building_employment_machinists_add = 1250
+			building_employment_engineers_add = 750
 		}
 	}
-
-	required_input_goods = electricity
 }
